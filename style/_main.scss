@@ -1,0 +1,285 @@
+main{
+    margin:0;
+    padding: 0;
+    min-height: 1000px;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    // position: absolute;
+    min-height: 500px;
+
+    .title{
+        position: absolute;
+        margin-top:22px;
+        color: #dacb46;
+        margin-left: 170px;
+        
+        h2{
+            
+            text-shadow: 1px 1px 1px ;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: 34px;
+            line-height: 10px;
+            font-family: UTMCafetaRegular;
+        }
+
+        hr{
+            width: 1180px;
+            color: yellow;
+
+            
+        }
+    }
+
+    .demo{
+        position: absolute;
+        margin-top: 80px;
+        background-color: #1a1a1a;
+        width: 1180px;
+        min-height:350px;
+        left:50%;
+        transform: translateX(-50%);
+
+        .demo_content{
+            
+            min-width: 1000px;
+            height: 300px;
+            display: flex;
+            // position: relative;
+            // align-items: center;
+            justify-content: space-around;
+
+            li{
+                list-style: none;
+                position: relative;
+                top:22px;
+                left: -5px;
+                width: 255px;
+                height: 300px;
+                align-items: center;
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+
+                    .top-card-item{
+                        position: absolute;
+                        background-color: #A21D0A;
+                        font-size: 11px;
+                        font-weight: bold;
+                        float: left;
+                        padding: 4px;
+                        text-shadow: 1px 1px 2px #111;
+                        top:10px;
+                        left: 4px;
+                        min-height: 20px;
+                        
+                        span{
+                            line-height: 10px;
+                        }
+                    }
+
+                    .botton-card-item{
+                        position:absolute;
+                        bottom: 0;
+                        background-image: initial;
+                        background-position-x: initial;
+                        background-position-y: initial;
+                        background-size: initial;
+                        background-repeat-x: initial;
+                        background-repeat-y: initial;
+                        background-attachment: initial;
+                        background-origin: initial;
+                        background-clip: initial;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        width: 266px;
+                        height: 43px;
+
+                        h3{
+                            font-size: 15px;
+                            color: #FF8040;
+                            text-transform: uppercase;
+                            text-shadow: 1px;
+                            font-weight: 700;
+                            margin: 5px 0px 5px 5px;
+                        }
+
+                        h4{
+                            color: #fff;
+                            font-size: 13px;
+                            margin: 5px 0 0 5px;
+                        }
+                    }
+
+                }
+                
+                
+            }
+            
+        }
+    }
+ 
+}
+.content{
+    display: flex;
+    
+}
+.left-content{
+    margin-left: 140px;
+    padding:0;
+    min-width: 400px;
+    min-height: 1000px;
+
+    .slider{
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        width: 700px;
+        overflow: hidden;
+        position: relative;
+        left: 380px;
+        transform: translateX(-50%);
+        bottom: 30px;
+        border-radius: 30px;
+
+        .slides{
+            height: 400px;
+            width: 700px;
+            position: relative;
+            
+        }
+
+        .bar{
+            display: flex;
+            width: 40px;
+            bottom: 10px;
+            left:50%;
+            transform: translateX(-50%);
+            position: absolute;
+            justify-content: center;
+            width: auto;
+
+            input{
+                padding: 10px;
+                width: 20px;
+                cursor:pointer;
+            } 
+            
+        }
+
+        .prev, .next {
+            background-color: rgba(0,0,0,0.5);
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 30px 10px 30px 10px;
+            color: white;
+            font-weight: 500;
+            font-size: 30px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            text-decoration: none;
+          }
+          
+          /* Position the "next button" to the right */
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+          }
+
+       
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+          
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+    }
+}
+.right-content{
+    margin: -37px 0 0 90px;
+    padding: 0;
+    min-width: 400px;
+    height: auto;
+
+    .caption{
+        font-style: normal;
+        font-variant-ligatures: normal;
+        font-variant-caps: normal;
+        font-variant-numeric: normal;
+        font-variant-east-asian: normal;
+        font-weight: 700;
+        font-stretch: normal;
+        font-size: 34px;
+        line-height: 40px;
+        font-family: UTMCafetaRegular;
+        color: yellow;
+        text-shadow: 3px 3px 1px #111;
+
+    }
+
+    .wapper{
+        margin-top: 30px 0 10px 0;
+
+        button{
+           margin:20px 0 20px 0;
+           padding: 16px ;
+           background-color:#FF8040;
+           color: #fff;
+           border:none;
+        }
+    }   
+
+    .listfilm{
+        margin:0;
+        padding:0;
+        width:400px;
+        
+
+        li{
+            list-style: none;
+            width: 260px;
+            height: 80px;
+            border: 1px solid #111;
+            margin-top: 8px;
+            
+            a{
+                text-decoration: none;
+                color: rgb(194, 170, 141);
+                display: flex;
+                .title-film{
+                    margin: 10px 0 0 10px;
+                    line-height: 10px;
+                }
+            }
+        }
+
+    }
+}
