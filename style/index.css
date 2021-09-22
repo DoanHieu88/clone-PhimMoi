@@ -297,6 +297,7 @@ main {
 
 .left-content {
   margin-left: 140px;
+  margin-top: 35px;
   padding: 0;
   min-width: 400px;
   min-height: 1000px;
@@ -401,8 +402,25 @@ main {
   }
 }
 
+.left-content .myVideo {
+  position: relative;
+  left: 29px;
+  top: -58px;
+}
+
+.left-content .myVideo .title-video {
+  position: absolute;
+  bottom: 112px;
+  background-color: rgba(255, 255, 0, 0.2);
+  color: #fff;
+  width: 760px;
+  text-align: center;
+  line-height: 24px;
+}
+
 .right-content {
-  margin: -37px 0 0 90px;
+  margin-left: 140px;
+  margin-top: -36px;
   padding: 0;
   min-width: 400px;
   height: auto;
@@ -424,14 +442,8 @@ main {
   text-shadow: 3px 3px 1px #111;
 }
 
-.right-content .wapper {
-  margin-top: 30px 0 10px 0;
-}
-
 .right-content .wapper button {
-  margin: 20px 0 20px 0;
-  padding: 16px;
-  background-color: #FF8040;
+  margin: 10px 0 20px 0;
   color: #fff;
   border: none;
 }
@@ -439,15 +451,17 @@ main {
 .right-content .listfilm {
   margin: 0;
   padding: 0;
-  width: 400px;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
 }
 
 .right-content .listfilm li {
+  padding: 5px;
   list-style: none;
   width: 260px;
-  height: 80px;
-  border: 1px solid #111;
-  margin-top: 8px;
+  height: 75px;
+  border-bottom: 1px solid rgba(0, 255, 1, 0.5);
 }
 
 .right-content .listfilm li a {
@@ -461,6 +475,16 @@ main {
 .right-content .listfilm li a .title-film {
   margin: 10px 0 0 10px;
   line-height: 10px;
+}
+
+.right-content .vd-right {
+  position: relative;
+  top: 10px;
+}
+
+.right-content .vd-right li {
+  border: none;
+  padding-bottom: 110px;
 }
 
 #ad {

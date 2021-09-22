@@ -14,7 +14,7 @@
 </head>
 <body onload = "startTime()">
   <!-- Phần quảng cáo -->
-    <div id='ad'>
+    <!-- <div id='ad'>
       <div class="sub-ad">
         <button type="button" id='btn-ad' onclick="off()" >
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-file-excel-fill" viewBox="0 0 16 16" style="color: #dacb46;">
@@ -25,17 +25,17 @@
           <img id='img-ad' src="./img/venom.png">
         </a>        
       </div>            
-    </div>
+    </div> -->
 
  <!-- Phần chat box -->
-    <button type="button" class="btn btn-outline-danger" style="z-index: 902; color: #fff; position: fixed; bottom: 10px; right: 10px; background-color: #025e86; z-index: 1000;" onclick="onChat()"  >
+    <!-- <button type="button" class="btn btn-outline-danger" style="z-index: 902; color: #fff; position: fixed; bottom: 10px; right: 10px; background-color: #025e86; z-index: 1000;" onclick="onChat()"  >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
          <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
       </svg>
-    </button>     
+    </button>      -->
 
 <!-- phần form chat-->
-    <div id='form-chat-box'>
+    <!-- <div id='form-chat-box'>
       <div class="heading-chat">
         <h4>Chat với đội ngũ chuyên viên tư vấn</h4>
       </div>
@@ -48,10 +48,10 @@
           <span class="glyphicon glyphicon-send"></span> Send 
         </a>
       </form>
-    </div>
+    </div> -->
 
 <!--phần quảng cáo hôi nách -->
-    <div class="ad-left">
+    <!-- <div class="ad-left">
       <div id='ad-hide'>
         <button id='btn-hide' onclick="hideAd()">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
@@ -67,7 +67,7 @@
         </svg>
         Quảng cáo
        </button>
-      </div>
+      </div> -->
  <!-- Phần header-->     
     <header>
         <div class="content">
@@ -237,146 +237,203 @@
           </div>
         </div>
         <!-- End container-->
+
        <!--Content--> 
         <div class="content">
           <!--left-->
-          <div class="left-content">
-            <div class="slider">
-               <div class="slides fade">
-                   <img src="./img/nowayhome.jpg" width="700px" height="400px">
-               </div>
- 
-               <div class="slides fade">
-                 <img src="./img/mikami.jpg" width="700px" height="400px" >
-               </div>
- 
-               <div class="slides fade">
-                 <img src="./img/shangchi.jfif" width="700px" height="400px">
-               </div>
- 
-               <div class="slides fade">
-                 <img src="./img/tokuda.jpg" width="700px" height="400px">
-               </div>
- 
-               <div class="slides fade">
-                 <img src="./img/fast9.jpg" width="700px" height="400px">
-               </div>
- 
-               <div class="slides fade">
-                 <img src="./img/joinwick.jpg" width="700px" height="400px">
-               </div>
-               <div class="bar">
-                 <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(1)">
-                 <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(2)">
-                 <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(3)">
-                 <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(4)">
-                 <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(5)">
-                 <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(6)">
-               </div>
-               
-              <!-- Next and previous buttons -->
-                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-             
+              <div class="left-content">
+                <div class="slider">
+                  <div class="slides fade">
+                      <img src="./img/nowayhome.jpg" width="700px" height="400px">
+                  </div>
+    
+                  <div class="slides fade">
+                    <img src="./img/mikami.jpg" width="700px" height="400px" >
+                  </div>
+    
+                  <div class="slides fade">
+                    <img src="./img/shangchi.jfif" width="700px" height="400px">
+                  </div>
+    
+                  <div class="slides fade">
+                    <img src="./img/tokuda.jpg" width="700px" height="400px">
+                  </div>
+    
+                  <div class="slides fade">
+                    <img src="./img/fast9.jpg" width="700px" height="400px">
+                  </div>
+    
+                  <div class="slides fade">
+                    <img src="./img/joinwick.jpg" width="700px" height="400px">
+                  </div>
+                  <div class="bar">
+                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(1)">
+                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(2)">
+                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(3)">
+                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(4)">
+                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(5)">
+                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(6)">
+                  </div>
+                  
+                  <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+
+                <!--Video-->
+                <div class="myVideo" >
+                    <video autoplay muted loop id="traler" width="760px" height="650px"> 
+                        <source src="./img/intro.mp4" type="video/mp4" style="width: 700px; height: 650px;">
+                    </video>
+                    
+                    <!-- Title-->
+                    <div class="title-video">
+                      <h2 style="color:#DEB887; font-weight: 600; ">Nothing impossible</h2>
+                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur ipsum iste possimus </p>
+                    </div>
+                </div>
             </div>
-         </div>
          
-         <!--right-->
-         <!-- <div class="right-content">
-           <h2 class="caption">TOP THỊNH HÀNH</h2>
+         <!-- content-right-->
+              <div class="right-content">
+                  <h2 class="caption">TOP THỊNH HÀNH</h2>
 
-           <div class="wapper">
-             <button>Phim Bộ</button>
-             <button>Phim Lẻ</button>
-             <button>Hoạt Hình</button>
-           </div>
+                  <div class="wapper">
+                    <button class="btn btn-warning">Phim Bộ</button>
+                    <button class="btn btn-danger">Phim Lẻ</button>
+                    <button class="btn btn-success">Hoạt Hình</button>
+                  </div>
 
-           <ul class="listfilm">
-             <li><a href="#">
-               <img src="./img/locfuho.jpg" width="64px" height="64px">
-               <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>    
-             </a></li>
+                    <!--List film-->
+                    <ul class="listfilm">
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                              <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                              <p class="real-name" style="color: aqua;">locfuho</p>
+                              <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>    
+                      </a></li>
 
-             <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-              <div class="title-film">  
-                <p class="name">Thầy giáo lộc</p>
-                <p class="real-name">locfuho</p>
-             </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                      <li><a href="#">
+                          <img src="./img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                          <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                            <p class="real-name" style="color: aqua;">locfuho</p>
+                            <p style="font-size:12px">Người thấy Tâm huyết</p>
+                          </div>
+                      </a></li>
+                    </ul>
+                      
+                <!--Phần video phải -->
+                    <div class="vd-right">
+                          <div class="coming-soon" style="margin-top:20px">
+                            <h2 class="caption" style="text-transform: uppercase; padding: 10px;">Coming Soon</h2>
+                          </div>
+                          <ul class="listfilm" style="height: 410px;">
+                                <li >                                 
+                                  <iframe width="261" height="137" style="margin-right:10px" src="https://www.youtube.com/embed/8p6kuNniUaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onclick="onVd()"></iframe>
+                                </li>
+                                
+                                   <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
 
-            <li><a href="#">
-              <img src="./img/locfuho.jpg" width="64px" height="64px">
-             <div class="title-film">  
-                  <p class="name">Thầy giáo lộc</p>
-                  <p class="real-name">locfuho</p>
-               </div>
-            </a></li>
+                                <li>
+                                  <iframe  width="261" height="137" src="https://www.youtube.com/embed/4_FvK9FUG2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                                </li>
+                                
+                                   <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
 
-           </ul>
-                       
-         </div>
+                                <li>
+                                  <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </li>
+
+                                  <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                                <li>
+                                  <iframe  width="261" height="137" src="https://www.youtube.com/embed/8p6kuNniUaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                             
+                                </li>
+
+                                  <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                                <li>
+                                  <iframe  width="261" height="137" src="https://www.youtube.com/embed/4_FvK9FUG2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                                </li>
+                                
+                                   <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                                <li>
+                                  <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </li>
+                          </ul>
+                    </div>
+                    
+              </div>
         </div>
-         -->
+        
        
     </main>
 
