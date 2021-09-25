@@ -33,12 +33,13 @@ main{
 
         hr{
             width: 1180px;
-            color: yellow;
+            color: rgb(95, 95, 46);
 
             
         }
     }
-
+   
+    /* Phần Phim để cử*/
     .demo{
         position: absolute;
         margin-top: 80px;
@@ -139,6 +140,7 @@ main{
     min-width: 400px;
     min-height: 1000px;
 
+    /* Phần slider*/
     .slider{
         margin: 0;
         padding: 0;
@@ -159,21 +161,28 @@ main{
         }
 
         .bar{
-            display: flex;
-            width: 40px;
             bottom: 10px;
-            left:50%;
-            transform: translateX(-50%);
             position: absolute;
-            justify-content: center;
-            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
 
-            input{
-                padding: 10px;
-                width: 20px;
-                cursor:pointer;
-            } 
-            
+            .dot{
+               
+                bottom: 0;
+                cursor: pointer;
+                height: 13px;
+                width: 13px;
+                margin: 0 2px;
+                background-color: yellow;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                
+            }
+
+            .active, .dot :hover{
+                background-color: #A21D0A;
+            }
         }
 
         .prev, .next {
@@ -224,14 +233,15 @@ main{
 
     }
 
+    //video-auto
     .myVideo{
         position: relative;
         left: 29px;
-        top : -58px;
+        top : 58px;
         
         .title-video{
             position: absolute;
-            bottom: 112px;
+            bottom: 40px;
             background-color: rgba(255,255,0,0.2);
             color:#fff;
             width: 760px;
@@ -241,8 +251,8 @@ main{
     }
 }
 .right-content{
-    margin-left: 140px;
-    margin-top: -36px;
+    margin-left: 200px;
+    margin-top: -20px;
     padding: 0;
     min-width: 400px;
     height: auto;
@@ -264,7 +274,7 @@ main{
     }
 
     .wapper{
-        // margin: 5px 0 px 0;
+       
 
         button{
            margin:10px 0 20px 0;
@@ -304,6 +314,7 @@ main{
 
     }
 
+    // list video
     .vd-right{
         position: relative;
         top:10px;

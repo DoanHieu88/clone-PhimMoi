@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-color: #3a393f;
   width: 100%;
@@ -173,6 +174,7 @@ main {
   margin: 0;
   padding: 0;
   min-height: 500px;
+  /* Phần Phim để cử*/
 }
 
 .container .title {
@@ -199,7 +201,7 @@ main {
 
 .container .title hr {
   width: 1180px;
-  color: yellow;
+  color: #5f5f2e;
 }
 
 .container .demo {
@@ -301,6 +303,7 @@ main {
   padding: 0;
   min-width: 400px;
   min-height: 1000px;
+  /* Phần slider*/
 }
 
 .left-content .slider {
@@ -326,25 +329,28 @@ main {
 }
 
 .left-content .slider .bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40px;
   bottom: 10px;
+  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: auto;
 }
 
-.left-content .slider .bar input {
-  padding: 10px;
-  width: 20px;
+.left-content .slider .bar .dot {
+  bottom: 0;
   cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.left-content .slider .bar .active, .left-content .slider .bar .dot :hover {
+  background-color: #A21D0A;
 }
 
 .left-content .slider .prev, .left-content .slider .next {
@@ -405,12 +411,12 @@ main {
 .left-content .myVideo {
   position: relative;
   left: 29px;
-  top: -58px;
+  top: 58px;
 }
 
 .left-content .myVideo .title-video {
   position: absolute;
-  bottom: 112px;
+  bottom: 40px;
   background-color: rgba(255, 255, 0, 0.2);
   color: #fff;
   width: 760px;
@@ -419,8 +425,8 @@ main {
 }
 
 .right-content {
-  margin-left: 140px;
-  margin-top: -36px;
+  margin-left: 200px;
+  margin-top: -20px;
   padding: 0;
   min-width: 400px;
   height: auto;
@@ -601,6 +607,84 @@ main {
   color: #fff;
   display: none;
   z-index: 90;
+}
+
+.information-movie {
+  background-color: #1a1a1a;
+  min-height: 530px;
+  width: 720px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px yellow;
+}
+
+.information-movie .sub-slider {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.information-movie .sub-slider .img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.information-movie .sub-slider .sub-bar {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information-movie .sub-slider .sub-bar .sub-dot {
+  margin-left: 5px;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.information-movie .sub-slider .sub-bar .active, .information-movie .sub-slider .sub-bar .sub-dot:hover {
+  opacity: 1;
+}
+
+.information-movie .movie {
+  width: 300px;
+  position: absolute;
+  right: 50px;
+}
+
+.information-movie .movie .moive-detail {
+  color: aliceblue;
+  line-height: 5px;
+}
+
+.information-movie .movie .moive-detail .detail {
+  margin: 20px 0 0 10px;
+  width: 300px;
+  height: 290px;
+  line-height: 29px;
+  background-color: #222;
+  overflow: auto;
+}
+
+.information-movie .movie .moive-detail .detail p {
+  margin: 0 0 0 10px;
+}
+
+.information-movie .movie .btn-primary {
+  margin: 43px 0 0 9px;
+}
+
+.information-movie .movie .vote-film {
+  position: relative;
+  top: -68px;
+  right: -155px;
 }
 
 html {

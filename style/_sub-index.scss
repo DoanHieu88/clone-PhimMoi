@@ -1,0 +1,76 @@
+.information-movie{
+    background-color: #1a1a1a;
+    min-height: 530px;
+    width: 720px;
+    position: relative;
+    display: flex;
+    border: solid 1px yellow;
+    
+    .sub-slider{
+        position: relative;
+        top:10px;
+        left:10px;
+
+        .img-zoom-lens {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            /*set the size of the lens:*/
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+
+        .sub-bar{
+            width: 200px;
+            // position: absolute;
+            display: flex;
+
+           .sub-dot{
+               margin-left: 5px;
+               padding: 10px;
+               cursor: pointer;
+               opacity: 0.6;
+           }
+
+           .active, .sub-dot:hover{
+               opacity: 1;
+           }
+        }
+        
+    }
+
+    .movie{
+        width: 300px;
+        position: absolute;
+        right: 50px;
+        
+        .moive-detail{
+            color: aliceblue;
+            line-height: 5px;
+
+            .detail{
+                margin: 20px 0 0 10px;                
+                width: 300px;
+                height: 290px;
+                line-height: 29px;
+                background-color: #222;
+                overflow: auto;
+
+                p{
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+
+        .btn-primary{
+            margin: 43px 0 0 9px;
+        }
+        
+        .vote-film{
+            position: relative;
+            top: -68px;
+            right: -155px;
+        }
+    }
+}
+

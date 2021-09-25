@@ -19,7 +19,6 @@ function startTime(){
     }, 500);
 }
 
-
 function checkTime(i){
 
     if (i<10){
@@ -30,76 +29,51 @@ function checkTime(i){
 
 
 //slide show
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex = n++);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
-  var dots = document.getElementsByClassName("btn-radio");
-  if (n > 6) {slideIndex = 1}
-  if (n < 1) {slideIndex = 6}
-  for (i = 0; i < 6; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = btn-radio[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-//automatic silde
-var slideIndex = 0;
-showSlides();
-
+//khai báo biến slideIndex đại diện cho slide hiện tại
+var slideIndex;
+// KHai bào hàm hiển thị slide
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length){
-      slideIndex = 1
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
     }
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1500); // Change image every 2 seconds
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex].style.display = "block";  
+    dots[slideIndex].className += " active";
+    //chuyển đến slide tiếp theo
+    slideIndex++;
+    //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+    if (slideIndex > slides.length - 1) {
+      slideIndex = 0
+    }    
+    //tự động chuyển đổi slide sau 1,5s
+    setTimeout(showSlides, 1500);
+}
+//mặc định hiển thị slide đầu tiên 
+showSlides(slideIndex = 0);
+
+
+function currentSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+// prev/next 
+function plusSlides(n){
+  var slides = document.getElementsByClassName("slides");
+  showSlides(slideIndex += n);
+  if(slideIndex > slides.length - 1 ){
+    slideIndex = 0;
+  }
+
 }
 
 
-// //mutislide
-// //var slideIndex = [1,1];
-// /* Class the members of each slideshow group with different CSS classes */
-// // var slideId = ["slides1", "slides2"]
-// // showSlides(1, 0);
-// // showSlides(1, 1);
 
-// // function plusSlides(n, no) {
-// //   showSlides(slideIndex[no] += n, no);
-// // }
-
-// // function showSlides(n, no) {
-// //   var i;
-// //   var x = document.getElementsByClassName(slideId[no]);
-// //   if (n > x.length) {slideIndex[no] = 1}
-// //   if (n < 1) {slideIndex[no] = x.length}
-// //   for (i = 0; i < x.length; i++) {
-// //     x[i].style.display = "none";
-// //   }
-// //   x[slideIndex[no]-1].style.display = "block";
-// // }
 
 
 

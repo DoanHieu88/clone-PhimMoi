@@ -14,7 +14,7 @@
 </head>
 <body onload = "startTime()">
   <!-- Phần quảng cáo -->
-    <div id='ad'>
+    <!-- <div id='ad'>
       <div class="sub-ad">
         <button type="button" id='btn-ad' onclick="off()" >
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-file-excel-fill" viewBox="0 0 16 16" style="color: #dacb46;">
@@ -25,17 +25,17 @@
           <img id='img-ad' src="./img/venom.png">
         </a>        
       </div>            
-    </div>
+    </div> -->
 
  <!-- Phần chat box -->
-    <button type="button" class="btn btn-outline-danger" style="z-index: 902; color: #fff; position: fixed; bottom: 10px; right: 10px; background-color: #025e86; z-index: 1000;" onclick="onChat()"  >
+    <!-- <button type="button" class="btn btn-outline-danger" style="z-index: 902; color: #fff; position: fixed; bottom: 10px; right: 10px; background-color: #025e86; z-index: 1000;" onclick="onChat()"  >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
          <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
       </svg>
-    </button>     
+    </button>      -->
 
 <!-- phần form chat-->
-    <div id='form-chat-box'>
+    <!-- <div id='form-chat-box'>
       <div class="heading-chat">
         <h4>Chat với đội ngũ chuyên viên tư vấn</h4>
       </div>
@@ -48,10 +48,10 @@
           <span class="glyphicon glyphicon-send"></span> Send 
         </a>
       </form>
-    </div>
+    </div> -->
 
 <!--phần quảng cáo hôi nách -->
-    <div class="ad-left">
+    <!-- <div class="ad-left">
       <div id='ad-hide'>
         <button id='btn-hide' onclick="hideAd()">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
@@ -67,7 +67,7 @@
         </svg>
         Quảng cáo
        </button>
-      </div>
+      </div> -->
  <!-- Phần header-->     
     <header>
         <div class="content">
@@ -106,6 +106,10 @@
 
         <div class="menu">
             <ul class="nav">
+              <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg></a></li>
               <li><a href="#">PHIM MỚI</a></li>
               <li><a href="#">THỂ LOẠI</a>
                 
@@ -169,7 +173,7 @@
             
             <div class="demo_content">
               <li>                
-                <a href="#">                 
+                <a href="./sub_index/lucky-plumber.html">                 
                   <div class="movie" style="background-image: url(./img/fukada.jpg); width: 266px; height: 310px; background-position: center;">
                       <div class="top-card-item">
                           <span>HD-Víetsub | Tập 1/2</span>
@@ -184,7 +188,7 @@
               </li>
 
               <li>
-                    <a href="#">
+                    <a href="./sub_index/killer.html">
                       <div class="movie" style="background-image: url(./img/ke-sat-nhan.jpg); width: 266px; height: 310px; background-position: 0 0 0;">                       
                         <div class="top-card-item">
                           <span>HD-Víetsub | Tập 1/1</span>
@@ -200,7 +204,7 @@
               </li>
 
               <li>                 
-                  <a href="#">
+                  <a href="./sub_index/king.html">
                     <div class="movie" style="background-image: url(./img/king.jpg); width: 266px; height: 310px; background-position: center;">
 
                       <div class="top-card-item">
@@ -240,14 +244,17 @@
 
        <!--Content--> 
         <div class="content">
+
           <!--left-->
               <div class="left-content">
+
+                <!--Phần silder-->
                 <div class="slider">
-                  <div class="slides fade">
+                  <div class="slides fade" >
                       <img src="./img/nowayhome.jpg" width="700px" height="400px">
                   </div>
     
-                  <div class="slides fade">
+                  <div class="slides fade ">
                     <img src="./img/mikami.jpg" width="700px" height="400px" >
                   </div>
     
@@ -266,13 +273,13 @@
                   <div class="slides fade">
                     <img src="./img/joinwick.jpg" width="700px" height="400px">
                   </div>
-                  <div class="bar">
-                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(1)">
-                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(2)">
-                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(3)">
-                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(4)">
-                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(5)">
-                    <input class= "btn-radio" type="radio" name="radio-btn" onclick="currentSlide(6)">
+                  <div class="bar" >
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                   </div>
                   
                   <!-- Next and previous buttons -->
@@ -282,8 +289,8 @@
                 </div>
 
                 <!--Video-->
-                <div class="myVideo" >
-                    <video autoplay muted loop id="traler" width="760px" height="650px"> 
+                <div class="myVideo" style="width:500px">
+                    <video autoplay muted loop id="traler" width="760px" height="500px"> 
                         <source src="./img/intro.mp4" type="video/mp4" style="width: 700px; height: 650px;">
                     </video>
                     
@@ -390,7 +397,7 @@
                     </ul>
                       
                 <!--Phần video phải -->
-                    <div class="vd-right">
+                    <!-- <div class="vd-right">
                           <div class="coming-soon" style="margin-top:20px">
                             <h2 class="caption" style="text-transform: uppercase; padding: 10px;">Coming Soon</h2>
                           </div>
@@ -429,7 +436,7 @@
                                   <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                           </ul>
-                    </div>
+                    </div> -->
                     
               </div>
         </div>
