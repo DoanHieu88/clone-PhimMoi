@@ -109,16 +109,16 @@
              <!--Slide-index-->
           <div class="sub-slider">
              <div class=" moive-image sub-slides">
-                  <img  id="myimage"src="../img/eimi-2.jpg" style="width:325px; height: 420px;">   
-                  <div id="myresult" class="img-zoom-result"></div>  
+                  <img  id="myimage"src="../img/eimi-2.jpg" style="width:325px; height: 420px; position: relative;">   
+                  <!-- <div class="myresult" class="img-zoom-result" style="width:300px;height:400px;"></div>   -->
              </div>
              <div class=" moive-image sub-slides" >
-                 <img id="myimage" src="../img/fukada.jpg" style="width:325px; height: 420px;">   
-                 <div id="myresult" class="img-zoom-result"></div>     
+                 <img id="myimage2" src="../img/fukada.jpg" style="width:325px; height: 420px; position: relative;">   
+                 <!-- <div class="myresult" class="img-zoom-result" style="width:300px;height:400px;"></div>      -->
              </div>
              <div class=" moive-image sub-slides" >
-                 <img id="myimage" src="../img/eimi-3.jpg" style="width:325px; height: 420px;">  
-                 <div id="myresult" class="img-zoom-result"></div>      
+                 <img id="myimage3" src="../img/eimi-3.jpg" style="width:325px; height: 420px; position: relative;">  
+                 <!-- <div id="myresult" class="img-zoom-result" style="width:300px;height:400px;"></div>       -->
              </div>
 
              <!--Slide-button-->
@@ -276,7 +276,7 @@
             </ul>
               
         <!--Phần video phải-->
-            <div class="vd-right">
+            <!-- <div class="vd-right">
                   <div class="coming-soon" style="margin-top:20px">
                     <h2 class="caption" style="text-transform: uppercase; padding: 10px;">Coming Soon</h2>
                   </div>
@@ -317,48 +317,22 @@
                   </ul>
             </div>
             
-      </div>
+      </div> -->
       
     </div>
 
+
+
+    <script src="./sub-main-js/slider.js"></script>
+    <script src="./sub-main-js./zoom-img.js" ></script>
     <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
+      /* Initiate Magnify Function
+      with the id of the image, and the strength of the magnifier glass:*/
+      magnify("myimage", 3);
+      magnify("myimage2", 3);
+      magnify("myimage3", 3);
 
-          // Next/previous controls
-          // function plusSlides(n) {
-          //   showSlides(slideIndex += n);
-          // }
-
-          // Thumbnail image controls
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("sub-slides");
-            var dots = document.getElementsByClassName("sub-dot");
-            // var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            captionText.innerHTML = dots[slideIndex-1].alt;
-          }
-
-
-
-          // zoom image 
-
-          
-    </script>
+      </script>
     <!--<script src="../main.js" ></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
