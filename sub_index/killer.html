@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../style/index.css">
-    <title>Anh thớ sửa ống nước may mắn</title>
+    <title>Anh thợ sửa ống nước may mắn</title>
 </head>
 <body>
     <header>
@@ -103,8 +103,237 @@
             </ul>
         </div>
     </header>
+    <div class="content">
+      <div class="left-content">
+        <div class="information-movie">
+             <!--Slide-index-->
+          <div class="sub-slider">
+             <div class=" moive-image sub-slides">
+                  <img  id="myimage"src="../img/eimi-2.jpg" style="width:325px; height: 420px; position: relative;">   
+                  <!-- <div class="myresult" class="img-zoom-result" style="width:300px;height:400px;"></div>   -->
+             </div>
+             <div class=" moive-image sub-slides" >
+                 <img id="myimage2" src="../img/fukada.jpg" style="width:325px; height: 420px; position: relative;">   
+                 <!-- <div class="myresult" class="img-zoom-result" style="width:300px;height:400px;"></div>      -->
+             </div>
+             <div class=" moive-image sub-slides" >
+                 <img id="myimage3" src="../img/eimi-3.jpg" style="width:325px; height: 420px; position: relative;">  
+                 <!-- <div id="myresult" class="img-zoom-result" style="width:300px;height:400px;"></div>       -->
+             </div>
 
-    <script src="../main.js" ></script>
+             <!--Slide-button-->
+             <div class="sub-bar">
+                 <div class=" moive-image sub-dot" onclick="currentSlide(1)" >
+                     <img src="../img/eimi-2.jpg" width="80px" height="80px" style="border-radius: 20px;"  >      
+                 </div>
+                 <div class=" moive-image sub-dot" onclick="currentSlide(2)" >
+                       <img src="../img/fukada.jpg" width="80px" height="80px" style="border-radius: 20px;"  >      
+                 </div>
+                 <div class=" moive-image sub-dot" onclick="currentSlide(3)" >
+                    <img src="../img/eimi-3.jpg" width="80px" height="80px" style="border-radius: 20px;"  >      
+                 </div>
+             </div>
+          </div>
+          
+          <!-- Thông tin phim-->
+          <div class="movie">
+              <div class="moive-detail">
+                  <h2 style="color: #dacb46; font-weight: bold; font:26px 'UTMCafetaRegular'; text-transform: uppercase; line-height: 30px; ">Thợ sửa ống nước may mắn</h2>
+                  <p style="color: #999; font-size: 12px;">Lucky-plumber</p>
+                  <div class="detail">
+                    <p style="margin-top: 10px;">Diễn Viên: <a href="#">Eimi Fukada</a></p>
+                    <p>Quốc gia: <a href="#">Nhật Bản</a></p>
+                    <p>Năm:  <a href="#">2020</a></p>
+                    <p>Thời lượng: 2h45p/Tập</p>
+                    <p>Số tập: 2 tập</p>
+                    <p>Chất lượng: Full HD</p>
+                    <p>Thể loại: <a href="#">Hành Động 2 Người,</a> <a href="#">Tình cảm,</a> <a href="#">Kinh dị, </a><a href="#">Phim Lẻ,</a></p>
+                    <p> Công ty sản xuất: Chưa rõ</p>
+                  </div>                 
+              </div>
+              <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
+                </svg>
+                Xem Phim
+              </button>
+              <div class="vote-film">
+                <h3 style="color: #dacb46; font-weight: 700;">Đánh giá phim</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <span style="color:aqua; padding: 5px;">( 9,999,999 )</span>
+              </div>
+        </div>              
+      </div>                
+    </div>
+    
+        <!--nội dung bên phải-->
+      
+        <div class="right-content" style="margin: 20px 0 0 140px">
+          <h2 class="caption">TOP THỊNH HÀNH</h2>
+
+          <div class="wapper">
+            <button class="btn btn-warning">Phim Bộ</button>
+            <button class="btn btn-danger">Phim Lẻ</button>
+            <button class="btn btn-success">Hoạt Hình</button>
+          </div>
+
+            <!--List film-->
+            <ul class="listfilm">
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                      <p class="real-name" style="color: aqua;">locfuho</p>
+                      <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>    
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+
+              <li><a href="#">
+                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
+                    <p class="real-name" style="color: aqua;">locfuho</p>
+                    <p style="font-size:12px">Người thấy Tâm huyết</p>
+                  </div>
+              </a></li>
+            </ul>
+              
+        <!--Phần video phải-->
+            <!-- <div class="vd-right">
+                  <div class="coming-soon" style="margin-top:20px">
+                    <h2 class="caption" style="text-transform: uppercase; padding: 10px;">Coming Soon</h2>
+                  </div>
+                  <ul class="listfilm" style="height: 410px;">
+                        <li >                                 
+                          <iframe width="261" height="137" style="margin-right:10px" src="https://www.youtube.com/embed/8p6kuNniUaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onclick="onVd()"></iframe>
+                        </li>
+                        
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/4_FvK9FUG2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                        </li>
+                        
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/8p6kuNniUaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                             
+                        </li>
+
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/4_FvK9FUG2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                        </li>
+                        
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                  </ul>
+            </div>
+            
+      </div> -->
+      
+    </div>
+
+
+
+    <script src="./sub-main-js/slider.js"></script>
+    <script src="./sub-main-js./zoom-img.js" ></script>
+    <script>
+      /* Initiate Magnify Function
+      with the id of the image, and the strength of the magnifier glass:*/
+      magnify("myimage", 3);
+      magnify("myimage2", 3);
+      magnify("myimage3", 3);
+
+      </script>
+    <!--<script src="../main.js" ></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
