@@ -656,12 +656,13 @@ main {
 .information-movie .movie {
   width: 300px;
   position: absolute;
-  right: 50px;
+  right: 46px;
 }
 
 .information-movie .movie .moive-detail {
   color: aliceblue;
   line-height: 5px;
+  min-height: 384px;
 }
 
 .information-movie .movie .moive-detail .detail {

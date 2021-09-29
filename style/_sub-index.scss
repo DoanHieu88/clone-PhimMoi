@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     border: solid 1px yellow;
+
     
     .sub-slider{
         position: relative;
@@ -42,11 +43,12 @@
     .movie{
         width: 300px;
         position: absolute;
-        right: 50px;
+        right: 46px;
         
         .moive-detail{
             color: aliceblue;
             line-height: 5px;
+            min-height: 384px;
 
             .detail{
                 margin: 20px 0 0 10px;                
