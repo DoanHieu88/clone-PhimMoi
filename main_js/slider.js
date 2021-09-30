@@ -1,6 +1,6 @@
 //slide show
 //khai báo biến slideIndex đại diện cho slide hiện tại
-var slideIndex;
+var slideIndex = 0;
 // KHai bào hàm hiển thị slide
 function showSlides() {
     var i;
@@ -10,7 +10,7 @@ function showSlides() {
        slides[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace("active", "");
     }
 
     slides[slideIndex].style.display = "block";  
@@ -29,15 +29,24 @@ showSlides(slideIndex = 0);
 
 
 function currentSlide(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex = n);
 }
 
 // prev/next 
-function plusSlides(n){
+function plusSlides(x){
   var slides = document.getElementsByClassName("slides");
-  showSlides(slideIndex += n);
+  showSlides(slideIndex += x);
   if(slideIndex > slides.length - 1 ){
     slideIndex = 0;
+  }
+}
+
+
+function prevSlides(x){
+  var slides = document.getElementsByClassName("slides");
+  showSlides(slideIndex = x--);
+  if(slideIndex > slides.length - 1 ){
+    slideIndex = 0 ;
   }
 
 }

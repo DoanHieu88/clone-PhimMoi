@@ -261,7 +261,7 @@ main {
 
 .container .demo .demo_content li a .botton-card-item {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   background-image: initial;
   background-position-x: initial;
   background-position-y: initial;
@@ -273,7 +273,7 @@ main {
   background-clip: initial;
   background-color: rgba(0, 0, 0, 0.8);
   width: 266px;
-  height: 43px;
+  height: 52px;
 }
 
 .container .demo .demo_content li a .botton-card-item h3 {
