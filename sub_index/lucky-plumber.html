@@ -179,99 +179,336 @@
     
         <!--nội dung bên phải-->
       
-        <div class="right-content" style="margin: 20px 0 0 140px">
+        <div class="right-content" style="margin: 16px 0 0 120px">
           <h2 class="caption">TOP THỊNH HÀNH</h2>
 
           <div class="wapper">
-            <button class="btn btn-warning">Phim Bộ</button>
-            <button class="btn btn-danger">Phim Lẻ</button>
-            <button class="btn btn-success">Hoạt Hình</button>
+            <button class="btn btn-warning btn-tag-control1" id="default" onclick="onTab( 'first-list')">Phim Bộ</button>
+            <button class="btn btn-danger btn-tag-control1" onclick="onTab( 'second-list')">Phim Lẻ</button>
+            <button class="btn btn-success btn-tag-control1" onclick="onTab( 'last-list')">Hoạt Hình</button>
           </div>
 
             <!--List film-->
-            <ul class="listfilm" style="height: 412px;">
+            <ul class="listfilm" id="first-list">
               <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <img src="../img/diepvan.jfif" width="64px" height="64px" style="border-radius: 10px;">
                   <div class="title-film">  
-                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                      <p class="real-name" style="color: aqua;">locfuho</p>
-                      <p style="font-size:12px">Người thấy Tâm huyết</p>
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Diep Spider-man</p>
+                      <p class="real-name" style="color: aqua;">Diệp nhện</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                        1,213,412
+                      </p>
+                  </div>    
+              </a></li>
+              <li><a href="#">
+                <img src="../img/ke-sat-nhan.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Killer</p>
+                    <p class="real-name" style="color: aqua;">Kẻ Sát Nhân</p>
+                    <p style="font-size:12px">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      </svg>
+                      1,122,111
+                    </p>
+                </div>    
+            </a></li>
+
+            <li><a href="#">
+              <img src="../img/venom.png" width="64px" height="64px" style="border-radius: 10px;">
+              <div class="title-film">  
+                  <p class="name" style="color: #dacb46; text-transform: uppercase;">Venom</p>
+                  <p class="real-name" style="color: aqua;">Nọc Độc</p>
+                  <p style="font-size:12px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg>
+                    1,213,412
+                  </p>
+              </div>    
+          </a></li>
+
+             <li><a href="#">
+                  <img src="../img/squid-game.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Squid Game</p>
+                      <p class="real-name" style="color: aqua;">Trò chơi con mực</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                        1,222,224
+                      </p>
                   </div>    
               </a></li>
 
               <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                <img src="../img/batman.jfif" width="64px" height="64px" style="border-radius: 10px;">
+                <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">BatMan</p>
+                    <p class="real-name" style="color: aqua;">Người Dơi</p>
+                    <p style="font-size:12px">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      </svg>
+                      1,121,412
+                    </p>
+                </div>    
+            </a></li>
+
+            <li><a href="#">
+              <img src="../img/squid-game.jpg" width="64px" height="64px" style="border-radius: 10px;">
+              <div class="title-film">  
+                  <p class="name" style="color: #dacb46; text-transform: uppercase;">Squid Game</p>
+                  <p class="real-name" style="color: aqua;">Trò chơi con mực</p>
+                  <p style="font-size:12px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg>
+                    1,213,412
+                  </p>
+              </div>    
+          </a></li>
+          </ul>
+          <!--end -list-one-->
+
+            <ul class="listfilm" id="second-list">
+              <li><a href="#">
+                <img src="../img/melody.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Lewd girl  </p>
+                    <p class="real-name" style="color: aqua;">Cô nàng Dam Dang</p>
+                    <p style="font-size:12px">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      </svg>
+                      100,000,000,000
+                    </p>
+                </div>    
+            </a></li>
+
+
+            <li><a href="#">
+              <img src="../img/eimi-3.jpg" width="64px" height="64px" style="border-radius: 10px;">
+              <div class="title-film">  
+                  <p class="name" style="color: #dacb46; text-transform: uppercase;">Silent horn </p>
+                  <p class="real-name" style="color: aqua;">Chiếc sừng thầm lặng</p>
+                  <p style="font-size:12px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg>
+                    999,939,324
+                  </p>
+              </div>    
+          </a></li>
+
+                <li><a href="#">
+                  <img src="../img/tokuda.jpg" width="64px" height="64px" style="border-radius: 10px;">
                   <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Old father</p>
+                      <p class="real-name" style="color: aqua;">Người cha già</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                        888,882,882
+                      </p>
+                  </div>    
               </a></li>
 
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+
+                <li><a href="#">
+                  <img src="../img/mikami.jpg" width="64px" height="64px" style="border-radius: 10px;">
                   <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">bad girl</p>
+                      <p class="real-name" style="color: aqua;">Cô nàng hư hỏng</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                        213,765,875
+                      </p>
+                  </div>    
               </a></li>
 
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+
+                <li><a href="#">
+                  <img src="../img/joinwick.jpg" width="64px" height="64px" style="border-radius: 10px;">
                   <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Joinwick</p>
+                      <p class="real-name" style="color: aqua;">Joinwick</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                      </p>
+                  </div>    
               </a></li>
 
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
-                  <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
-              </a></li>
 
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                <li><a href="#">
+                  <img src="../img/joinwick.jpg" width="64px" height="64px" style="border-radius: 10px;">
                   <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
-              </a></li>
-
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
-                  <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
-              </a></li>
-
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
-                  <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
-              </a></li>
-
-              <li><a href="#">
-                  <img src="../img/locfuho.jpg" width="64px" height="64px" style="border-radius: 10px;">
-                  <div class="title-film">  
-                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Teacher Loc</p>
-                    <p class="real-name" style="color: aqua;">locfuho</p>
-                    <p style="font-size:12px">Người thấy Tâm huyết</p>
-                  </div>
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Joinwick</p>
+                      <p class="real-name" style="color: aqua;">Joinwick</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                      </p>
+                  </div>    
               </a></li>
             </ul>
-    </div>
+            <!--end-list-2-->
+
+            <ul class="listfilm" id="last-list">
+              <li><a href="#">
+                <img src="../img/frozen.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Frozen II</p>
+                    <p class="real-name" style="color: aqua;">Nữ Hoàng băng giá</p>
+                    <p style="font-size:12px">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      </svg>
+                      111,111,000
+                    </p>
+                </div>    
+              </a></li>
+
+              <li><a href="#">
+              <img src="../img/batman.jfif" width="64px" height="64px" style="border-radius: 10px;">
+                        <div class="title-film">  
+                            <p class="name" style="color: #dacb46; text-transform: uppercase;">batman</p>
+                            <p class="real-name" style="color: aqua;">Người dơi</p>
+                            <p style="font-size:12px">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg>
+                              123,212
+                            </p>
+                        </div>    
+                    </a></li>
+
+                    <li><a href="#">
+                      <img src="../img/super-man.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                      <div class="title-film">  
+                          <p class="name" style="color: #dacb46; text-transform: uppercase;">Super family</p>
+                          <p class="real-name" style="color: aqua;">Gia đình siêu nhân</p>
+                          <p style="font-size:12px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                            </svg>
+                            123,585,976
+                          </p>
+                      </div>    
+                  </a></li>
+
+
+                  <li><a href="#">
+                    <img src="../img/natra.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                    <div class="title-film">  
+                        <p class="name" style="color: #dacb46; text-transform: uppercase;">natra</p>
+                        <p class="real-name" style="color: aqua;">Ma đồng giáng thế</p>
+                        <p style="font-size:12px">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                          </svg>
+                          100,000,000
+                        </p>
+                    </div>    
+                </a></li>
+
+                <li><a href="#">
+                  <img src="../img/joinwick.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                  <div class="title-film">  
+                      <p class="name" style="color: #dacb46; text-transform: uppercase;">Joinwick</p>
+                      <p class="real-name" style="color: aqua;">Joinwick</p>
+                      <p style="font-size:12px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                      </p>
+                  </div>    
+              </a></li>
+
+              <li><a href="#">
+                <img src="../img/joinwick.jpg" width="64px" height="64px" style="border-radius: 10px;">
+                <div class="title-film">  
+                    <p class="name" style="color: #dacb46; text-transform: uppercase;">Joinwick</p>
+                    <p class="real-name" style="color: aqua;">Joinwick</p>
+                    <p style="font-size:12px">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                      </svg>
+                    </p>
+                </div>    
+              </a></li>
+            </ul><!--end-ls-3-->
+              
+        <!--Phần video phải -->
+            <!-- <div class="vd-right">
+                  <div class="coming-soon" style="margin-top:20px">
+                    <h2 class="caption" style="text-transform: uppercase; padding: 10px;">Coming Soon</h2>
+                  </div>
+                  <ul class="listfilm" style="height: 410px;">
+                        <li >                                 
+                          <iframe width="261" height="137" style="margin-right:10px" src="https://www.youtube.com/embed/8p6kuNniUaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onclick="onVd()"></iframe>
+                        </li>
+                        
+                           <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/4_FvK9FUG2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                        </li>
+                        
+                           <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/8p6kuNniUaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                             
+                        </li>
+
+                          <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/4_FvK9FUG2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                        </li>
+                        
+                           <hr width="261" style="color: lime; height: 2px; position: relative; top:16px; left: 4px;" >
+
+                        <li>
+                          <iframe  width="261" height="137" src="https://www.youtube.com/embed/7JbiQycGfk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                  </ul>                   
+            </div> end-right-video                                    -->
+      </div> <!--End-right-content-->  
 
     <!--Phần Phim để cử -->
     <div class="container"  style="left:144px; top: 630px;  position:absolute;">
@@ -356,10 +593,17 @@
 
 
     <!--Phần đồng hồ -->
-    <script src="./main_js/time.js" ></script>
+     <!--Phần đồng hồ -->
+     <script src="./main_js/time.js" ></script>
 
-    <script src="./sub-main-js/slider.js"></script>
-    <script src="./sub-main-js./zoom-img.js" ></script>
+     <!--Phần slide-->
+   <script src="./sub-main-js/slider.js"></script>
+
+   <!--Phần zoom image-->
+   <script src="./sub-main-js./zoom-img.js" ></script>
+
+   <!--Phần list -->
+   <script src="../main_js/tab-control.js"></script>
     <script>
       /* Initiate Magnify Function
       with the id of the image, and the strength of the magnifier glass:*/

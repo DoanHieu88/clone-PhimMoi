@@ -366,7 +366,7 @@ main {
   margin-top: 35px;
   padding: 0;
   min-width: 400px;
-  min-height: 1000px;
+  height: auto;
   /* Phần slider*/
 }
 
@@ -472,22 +472,6 @@ main {
   }
 }
 
-.left-content .myVideo {
-  position: relative;
-  left: 29px;
-  top: 58px;
-}
-
-.left-content .myVideo .title-video {
-  position: absolute;
-  bottom: 40px;
-  background-color: rgba(255, 255, 0, 0.2);
-  color: #fff;
-  width: 760px;
-  text-align: center;
-  line-height: 24px;
-}
-
 .right-content {
   margin-left: 200px;
   margin-top: -20px;
@@ -556,6 +540,70 @@ main {
 .right-content .vd-right li {
   border: none;
   padding-bottom: 110px;
+}
+
+.film-category {
+  margin: 80px 0 0 130px;
+  font-size: 17px;
+}
+
+.film-category .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f68601;
+}
+
+.film-category .heading .caption {
+  font-style: normal;
+  -webkit-font-variant-ligatures: normal;
+          font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-size: 34px;
+  line-height: 40px;
+  font-family: UTMCafetaRegular;
+  color: yellow;
+  text-shadow: 3px 3px 1px #111;
+  text-transform: uppercase;
+  margin: 0 0 40px 20px;
+}
+
+.film-category .heading ul.heading-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 28px;
+  margin: 8px 0 0 40px;
+  padding: 0;
+}
+
+.film-category .heading ul.heading-list > li {
+  text-align: center;
+  width: 62px;
+  height: 28px;
+  margin-right: 10px;
+  line-height: 28px;
+  background-color: #1a1a1a;
+  list-style: none;
+}
+
+.film-category .heading ul.heading-list > li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.film-category .heading ul.heading-list li:hover {
+  background-color: #f68601;
+  text-decoration: none;
+}
+
+.film-category ul.film {
+  color: #fff;
+  font-size: 2rem;
 }
 
 #ad {
