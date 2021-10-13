@@ -364,9 +364,10 @@ main{
 .film-category{
     margin: 60px 0 0 120px ;  
     font-size: 17px;
-    background-color: #846a02;
+    background-color: rgba(14, 165, 185, 0.2);
     width: 1280px;
     height: 570px;
+    border: dashed 2px #F0cb35;
     
 
 
@@ -391,12 +392,30 @@ main{
             margin: 0 0 40px 20px;
 
         }
+        #count-down{
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: 700;
+            font-stretch: normal;
+            font-size: 34px;
+            line-height: 40px;
+            font-family: UTMCafetaRegular;
+            color: #09da09;
+            text-shadow: 3px 3px 1px #111;
+            text-transform: uppercase;
+            margin: 0 0 40px 20px;
+
+        }
+        
         ul.heading-list{
             display: flex;
             height: 28px;
             margin: 8px 0 0 40px;
             padding: 0;
-            
+
             
             >li{
                 text-align: center;
@@ -427,6 +446,16 @@ main{
         grid-gap: 16px;
         grid-template-columns: 232px 232px 232px 232px 232px;
 
+        .play{
+            position: absolute;
+            z-index: 3;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%);
+            opacity: 0;
+
+        }
+
         li:first-child{
             position: relative;
             list-style: none;
@@ -435,7 +464,17 @@ main{
             grid-row: 1/ span 2;
 
             .label-bottom{
-                opacity: 0;
+                width: 100%;
+                position: absolute;
+                color: #f68601;
+                bottom: 0;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 20px 10px;
+                line-height: 10px;
+                border-bottom-left-radius:10px ;
+                border-bottom-right-radius:10px ;
             }
             .label-top{
                 opacity: 0;
@@ -456,32 +495,10 @@ main{
                 font-size: 13px;
                 font-weight: 600;
             }
-
-            .label-bottom{
-                width: 100%;
-                position: absolute;
-                color: #f68601;
-                bottom: 14px;
-                font-size: 18px;
-                font-weight: 700;
-                background-color: rgba(0, 0, 0, 0.4);
-                padding: 20px 10px;
-                line-height: 10px;
-                border-bottom-left-radius:10px ;
-                border-bottom-right-radius:10px ;
+            .play{
                 opacity: 1;
             }
         }
-        // .item7{ 
-        //     grid-column: 3;
-        //     grid-row: 2 ;
-
-        // }
-        // .item3{ 
-        //     grid-column: 4;
-        //     grid-row: 1 /span2;
-
-        // }
         .item-small{
             list-style: none;
             position: relative;
@@ -489,11 +506,21 @@ main{
             img{
                 border-radius: 10px;
             }
-            
 
             .label-bottom{
-                opacity: 0;
-            }
+                width: 239px;
+                position: absolute;
+                color: #f68601;
+                bottom: 0;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 9px;
+                line-height: 10px;
+                border-bottom-left-radius:10px ;
+                border-bottom-right-radius:10px ;
+             }
+
             .label-top{
                 opacity: 0;
             }
@@ -513,23 +540,10 @@ main{
                     border-radius: 7px;
                     font-size: 10px;
                     font-weight: 600;
-                }
-    
-                .label-bottom{
-                    width: 239px;
-                    position: absolute;
-                    color: #f68601;
-                    bottom: 10px;
-                    font-size: 18px;
-                    font-weight: 700;
-                    background-color: rgba(0, 0, 0, 0.4);
-                    padding: 9px;
-                    line-height: 10px;
-                    border-bottom-left-radius:10px ;
-                    border-bottom-right-radius:10px ;
+                } 
+                .play{
                     opacity: 1;
-                    transition:  .0,9;
-                 }
+                }         
             }
         
     }
